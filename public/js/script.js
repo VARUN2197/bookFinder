@@ -1,6 +1,12 @@
 function searchBook() {
     var input = document.getElementById('userSearch').value;
+    var searchQuery = document.getElementById('searchQuery');
+    if(input)
+        searchQuery.innerHTML = "Search results for " + input;
+    else
+        searchQuery.innerHTML = "Please enter book's name";
     var bookResult = document.getElementById('result');
+    bookResult.innerHTML = "";
     
     $.ajax({
         type: "GET",
