@@ -1,3 +1,7 @@
-body {
-    background-color: aqua;
+#mainBody {
+    margin : 50px;
+}
+
+h2 {
+    text-align: center;
 }
